@@ -6,7 +6,7 @@ set -e
 touch .fauna-project
 
 # Push the schema from ./fauna/main.fsl to the db
-fauna schema push --force --url=$FAUNA_ENDPOINT --secret=$FAUNA_SECRET --dir=./fauna
+fauna schema push --active -y --url=$FAUNA_ENDPOINT --secret=$FAUNA_SECRET --dir=./fauna
 
 # Initialize data in the collections
 fauna eval --url=$FAUNA_ENDPOINT --secret=$FAUNA_SECRET --file=./fauna/seeddata.fql
