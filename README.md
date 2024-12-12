@@ -1,8 +1,8 @@
 # Fauna Driver Performance Test Utilities
-This repo contains common files that Fauna employs to run performance tests across our drivers so we can monitor for performance regressions.
+This repo contains common files that Fauna employs to run performance tests across our drivers so we can monitor for performance regressions. The repo is primarily intended for use by Fauna employees.
 
 ## init.sh and teardown.sh
-These two shell scripts handle setup and teardown of the performance test database. Before running these files, the runtime environment must meet this prerequisites:
+These two shell scripts handle setup and teardown of the performance test database. Before running these files, the runtime environment must meet these prerequisites:
 - Required environment variables:
   - `FAUNA_ENDPOINT` (the full URI to Fauna, e.g. https://db.fauna.com) 
   - `FAUNA_SECRET` (a database key with write privileges)
